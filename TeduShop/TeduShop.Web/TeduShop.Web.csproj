@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.7">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\TeduShop.Common\TeduShop.Common.csproj" />
+	  <ProjectReference Include="..\TeduShop.Data\TeduShop.Data.csproj" />
+	  <ProjectReference Include="..\TeduShop.Model\TeduShop.Model.csproj" />
+	  <ProjectReference Include="..\TeduShop.Service\TeduShop.Service.csproj" />
+	</ItemGroup>
+
+</Project>
